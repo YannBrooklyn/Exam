@@ -82,14 +82,104 @@ exo5()
 // EXO6
 
 function exo6(exo6b){
-    
+
+    let AgeUser = parseInt(prompt("Quel est ton age ?")); 
+
+ 
+
+if (AgeUser <= 13) { 
+
+ console.log("Les films disponible pour votre age sont \"Action Man\" et \"Matrix\".") 
+
+} 
+
+ 
+
+else if (AgeUser >= 13 && AgeUser <= 18) {   console.log("Les films disponible pour votre age sont \"Evil Dead\" et \"Matrix\".") 
+
+} 
+
+ 
+
+else {   console.log("Les films disponible pour votre age sont \"Evil Dead\".") 
+
+} 
+return exo6b   
 }
+exo6()
 
 // EXO7
 
 function exo7(exo7b){
+    let Plage = Math.round(Math.random()*10); 
+
+console.log(Plage); 
+return exo7b
     
 }
+exo7()
+
+// EXO8
+
+function exo8(exo8b){
+    let numberuser = parseInt(prompt("Donne un nombre")); 
+
+ 
+
+while (numberuser > 0) { 
+
+ numberuser--; 
+
+ console.log(numberuser); 
+
+} 
+return exo8b;
+}
+exo8()
+
+// EXO9
+
+function exo9(exo9b) { 
+
+     let enteredNumber = parseInt(prompt("Quel est le nombre à trouver ?")); 
+         let searchedNumber = 14; 
+
+         while (enteredNumber !== searchedNumber) { 
+           if (enteredNumber < searchedNumber) { 
+         enteredNumber = parseInt(prompt("C\'est plus")); 
+           } 
+           else if (enteredNumber > searchedNumber) { 
+         enteredNumber = parseInt(prompt('C\'est moins')); 
+           } 
+           else { 
+         console.log("Ah sa abandonne ?"); 
+         break; 
+           } 
+         } 
+         if (enteredNumber) { 
+           console.log("you win"); 
+         } 
+    return exo9b
+    }
+exo9()
+
+
+// EXO10
+
+function exo10(exo10b) {
+    let chiffres = [10, 15, 20, 15, 14, 8]; 
+
+    let sum = 0;  
+  for (let i = 0; i < chiffres.length; i++) { 
+
+   sum = sum + chiffres [i]; 
+
+   }
+
+  console.log("La somme des valeurs du tableau est " + sum) 
+return exo10b
+} 
+exo10()
 
 // EXO11
 
